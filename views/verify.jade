@@ -1,0 +1,11 @@
+extend layout
+
+block content
+  h1 Enter Code
+  form(action='verify', method='post')
+    label(for='token') Token
+    br
+    input(type='hidden', name='uid', value=uid)
+    input#token(type='text', name='token')
+    br
+    button(type='submit') Go

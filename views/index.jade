@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 SMS Auth
+
+  form(action="/", method="post")
+    label(for="user") Phone Number
+    br
+    input#user(type="text", name="user")
+    br
+    button(type="submit") Go
